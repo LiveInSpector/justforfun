@@ -1,2 +1,18 @@
 Eltex NV-10x playlist without usb-flash
 
+Find USB-Disk in system
+
+eltex-nv102[dev]# df -h
+Filesystem                Size      Used Available Use% Mounted on
+tmpfs                   109.3M    512.0K    108.8M   0% /tmp
+ubi7_0                   82.8M     60.3M     18.2M  77% /data
+ubi4_0                   26.2M      5.3M     20.9M  20% /splash
+ubi6_0                   54.7M    300.0K     51.5M   1% /home/user
+ubi5_0                  210.8M     89.5M    116.6M  43% /sdk
+ubi6_0                   54.7M    300.0K     51.5M   1% /mnt/stb/playlists
+/dev/sda1                 7.8G      4.0K      7.8G   0% /mnt/stb/local/USB-Disk
+
+
+
+
+eltex-nv102[stb]# cd /mnt/stb/playlists
